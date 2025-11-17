@@ -15,10 +15,12 @@
   <header class="header">
     <div class="container">
       <div class="header__wrap">
-        <div class="header__title">
-          <img class="header__title-icon" src="#" alt="">
-          <a href="#" class="header__title-link">Главная</a>
-        </div>
+        <a href="#" class="header__logo">
+          <svg class="header__logo-icon" width="30" height="30" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#header-logo"></use>
+          </svg>
+          <span href="#" class="header__logo-text">Главная</span>
+        </a>
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item"><a href="#" class="header__nav-link">Обо мне</a></li>
@@ -27,9 +29,11 @@
             <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
           </ul>
         </nav>
-        <div class="header__btn">
-          <button class="btn" type="button">Резюме</button>
-        </div>
+        <button class="header__btn btn" type="button">Резюме
+          <svg class="header__btn-icon" width="15" height="15" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#download-icon"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -40,12 +44,13 @@
           <div class="hero__info">
             <h1 class="hero__title">
               <span class="hero__title-regular-text">Привет, Я </span>
-              <span class="hero__title-bold-text">Никита Кабаев </span>
+              <span class="hero__title-bold-text">Никита&nbsp;Кабаев </span>
               <span class="hero__title-outlined-text">Начинающий </span>
               <span class="hero__title-bold-text">Frontend </span>
               <span class="hero__title-regular-text">разработчик</span>
             </h1>
-            <p class="hero__text">Потихоньку пилю этот сайтик, глядишь на работу возьмут. lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati recusandae, iusto
+            <p class="hero__text">Потихоньку пилю этот сайтик, глядишь на работу возьмут. lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Obcaecati recusandae, iusto
               illum veritatis molestias rerum quasi ratione veniam impedit provident maiores ipsa deleniti maxime
               repudiandae quaerat dicta doloremque neque velit.</p>
           </div>
