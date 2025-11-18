@@ -95,11 +95,11 @@ button {
 }
 
 .hero {
-  padding: 60px 0;
+  padding: 4rem 0;
 }
 .hero__wrap {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 300px 1fr;
   align-items: center;
   position: relative;
 }
@@ -129,11 +129,13 @@ button {
 }
 .hero__banner {
   grid-column: 2;
+  width: 100%;
+  height: 100%;
 }
 
 .socials {
   position: absolute;
-  bottom: -1.7rem;
+  bottom: -1.6rem;
 }
 .socials__list {
   display: flex;
@@ -170,7 +172,7 @@ button {
 .skills__list {
   padding: 2rem 0;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
   gap: 2rem;
 }
 .skills__link {
@@ -197,4 +199,13 @@ button {
 .skills__link-text {
   font-size: 1.24rem;
   font-weight: 600;
+}
+
+.footer {
+  padding: 2rem;
+  background-color: black;
+  color: white;
+}
+.footer .header__logo {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
