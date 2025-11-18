@@ -1,0 +1,132 @@
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Sora", "Arial", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Blocks */
+.header {
+  padding: 1rem 0;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.header__nav-list {
+  display: flex;
+  gap: 2rem;
+}
+.header__nav-link {
+  font-size: 1.24rem;
+  font-weight: 600;
+}
+.header__btn {
+  gap: 8px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  padding: 1rem 1.25rem;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  transition: background-color ease-in 0.3s;
+}
+.btn:hover, .btn:focus {
+  background-color: #404040;
+}
+
+.hero {
+  padding: 60px 0;
+}
+.hero__wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  position: relative;
+}
+.hero__info {
+  position: absolute;
+  max-width: 600px;
+}
+.hero__title {
+  font-size: 3rem;
+  line-height: 1.16;
+  margin: 0 0 2rem;
+}
+.hero__text {
+  margin: 0;
+  color: #71717A;
+}
+.hero__title-regular-text {
+  font-weight: 400;
+}
+.hero__title-bold-text {
+  font-weight: 800;
+}
+.hero__title-outlined-text {
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+  font-weight: 800;
+}
+.hero__banner {
+  grid-column: 2;
+}/*# sourceMappingURL=style.css.map */
