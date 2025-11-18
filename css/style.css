@@ -129,4 +129,31 @@ button {
 }
 .hero__banner {
   grid-column: 2;
+}
+
+.socials {
+  position: absolute;
+  bottom: -1.7rem;
+}
+.socials__list {
+  display: flex;
+  gap: 2rem;
+}
+.socials__link {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: backgrond-color ease-in 0.3s;
+}
+.socials__link:hover, .socials__link:focus {
+  background-color: black;
+}
+.socials__link:hover .socials__icon, .socials__link:focus .socials__icon {
+  color: white;
+}
+.socials__icon {
+  color: black;
+  transition: color ease-in 0.3s;
 }/*# sourceMappingURL=style.css.map */
