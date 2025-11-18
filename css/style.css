@@ -145,7 +145,7 @@ button {
   align-items: center;
   border: 2px solid black;
   border-radius: 4px;
-  transition: backgrond-color ease-in 0.3s;
+  transition: background-color ease-in 0.3s;
 }
 .socials__link:hover, .socials__link:focus {
   background-color: black;
@@ -156,4 +156,45 @@ button {
 .socials__icon {
   color: black;
   transition: color ease-in 0.3s;
+}
+
+.skills {
+  padding: 60px 0;
+}
+.skills__title {
+  font-size: 3rem;
+  line-height: 1.16;
+  margin: 0 0 2rem;
+  text-align: center;
+}
+.skills__list {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+.skills__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: background-color ease-in 0.3s, color ease-in 0.3s;
+}
+.skills__link:hover, .skills__link:focus {
+  background-color: black;
+  color: white;
+}
+.skills__link:hover .skills__icon, .skills__link:focus .skills__icon {
+  color: white;
+}
+.skills__icon {
+  color: black;
+  transition: color ease-in 0.3s;
+}
+.skills__link-text {
+  font-size: 1.24rem;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
